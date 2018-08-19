@@ -1,5 +1,6 @@
 {
- "name": "App",
+ "name": "bm_128",
+ "short_name": "bm_128",
  "icons": [
   {
    "src": "\/android-icon-36x36.png",
