@@ -1,0 +1,11 @@
+*.sw*
+*~
+build/
+bin/
+node_modules/
+vendor/
+build/
+compile/
+.tmp/
+.idea/
+.DS_Store

@@ -1,0 +1,106 @@
+@container-width: 400px;
+.container {
+	width: 100%;
+	max-width: @container-width + (@padding-normal * 2);
+	@media screen and (max-width: @breakpoint-desktop) {
+		padding: 0 @padding-normal;
+		margin: @padding-normal auto;
+	}
+	@media screen and (min-width: @breakpoint-desktop) {
+		margin: 5vh auto;
+	}
+}
+
+.cover {
+	display: block;
+	width: 100%;
+	height: auto;
+	@cover-size: @container-width / 2;
+	max-width: @cover-size;
+	max-height: @cover-size;
+	margin: 0 auto 1em auto;
+	border-radius: @border-radius-size;
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+	text-align: center;
+}
+
+.links {
+	display: flex;
+	flex-wrap: wrap;
+	.link {
+		flex: (@container-width / 2) - (@padding-normal);
+		margin: 0 @padding-normal @padding-normal 0;
+		background-color: @accent-color;
+		border-radius: @border-radius-size;
+		text-align: center;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		@media screen and (max-width: @breakpoint-desktop) {
+			padding: @padding-normal;
+		}
+		@media screen and (min-width: @breakpoint-desktop) {
+			padding: @padding-small @padding-normal;
+		}
+		&,
+		&:visited,
+		&:active {
+			color: @link-color;
+		}
+		&:hover {
+			color: @link-color;
+			background-color: @accent-color-dark;
+		}
+		&.spotify {
+			background-color: #1db954;
+			&:hover {
+				background-color: darken(#1db954, 5%);
+			}
+		}
+		&.i-tunes {
+			background-color: #db48d8;
+			&:hover {
+				background-color: darken(#db48d8, 5%);
+			}
+		}
+		&.apple-music {
+			background-color: #4aa3f9;
+			&:hover {
+				background-color: darken(#4aa3f9, 10%);
+			}
+		}
+		&.bandcamp {
+			background-color: #629aa9;
+			&:hover {
+				background-color: darken(#629aa9, 10%);
+			}
+		}
+		&.sound-cloud {
+			background-color: #ff8800;
+			&:hover {
+				background-color: darken(#ff8800, 5%);
+			}
+		}
+		&.google-play-music {
+			background-color: #f55a34;
+			&:hover {
+				background-color: darken(#f55a34, 10%);
+			}
+		}
+		&.deezer {
+			background-color: #ff0092;
+			&:hover {
+				background-color: darken(#ff0092, 5%);
+			}
+		}
+		&.tidal {
+			background-color: #555555;
+			&:hover {
+				background-color: darken(#555555, 5%);
+			}
+		}
+	}
+}
