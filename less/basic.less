@@ -90,15 +90,11 @@ a {
 	&:focus {
 		border-radius: @border-radius-size;
 	}
-	&::selection,
-	&::-moz-selection {
-		color: @accent-color;
-	}
 }
 
 &::selection,
 &::-moz-selection {
-	background-color: @accent-color-light;
+	background-color: fade(@accent-color-light, 50%);
 }
 
 *:focus {
