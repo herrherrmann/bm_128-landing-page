@@ -31,7 +31,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	.link {
-		flex: (@container-width / 2) - (@padding-normal);
+		flex: 1 1 (@container-width / 2) - (@padding-normal);
 		margin: 0 @padding-small @padding-normal @padding-small;
 		background-color: @accent-color;
 		border-radius: @border-radius-size;
@@ -60,16 +60,16 @@
 				background-color: darken(#1db954, 5%);
 			}
 		}
-		&.i-tunes {
-			background-color: #db48d8;
-			&:hover {
-				background-color: darken(#db48d8, 5%);
-			}
-		}
 		&.apple-music {
 			background-color: #4aa3f9;
 			&:hover {
 				background-color: darken(#4aa3f9, 10%);
+			}
+		}
+		&.i-tunes {
+			background-color: #db48d8;
+			&:hover {
+				background-color: darken(#db48d8, 5%);
 			}
 		}
 		&.bandcamp {
@@ -84,12 +84,6 @@
 				background-color: darken(#ff8800, 5%);
 			}
 		}
-		&.google-play-music {
-			background-color: #f55a34;
-			&:hover {
-				background-color: darken(#f55a34, 10%);
-			}
-		}
 		&.deezer {
 			background-color: #ff0092;
 			&:hover {
@@ -97,6 +91,12 @@
 			}
 		}
 		&.tidal {
+			background-color: #555555;
+			&:hover {
+				background-color: darken(#555555, 5%);
+			}
+		}
+		&.napster {
 			background-color: #555555;
 			&:hover {
 				background-color: darken(#555555, 5%);
