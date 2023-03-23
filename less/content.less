@@ -1,12 +1,12 @@
 @container-width: 400px;
+
 .container {
 	width: 100%;
 	max-width: @container-width + (@padding-normal * 2);
-	@media screen and (max-width: @breakpoint-desktop) {
-		padding: 0 @padding-normal;
-		margin: @padding-normal auto;
-	}
-	@media screen and (min-width: @breakpoint-desktop) {
+	padding: 0 @padding-normal;
+	margin: @padding-normal auto;
+	@media (min-width: @breakpoint-desktop) {
+		padding: 0;
 		margin: 5vh auto;
 	}
 }
@@ -44,10 +44,8 @@
 		white-space: nowrap;
 		overflow: hidden;
 		text-overflow: ellipsis;
-		@media screen and (max-width: @breakpoint-desktop) {
-			padding: @padding-normal;
-		}
-		@media screen and (min-width: @breakpoint-desktop) {
+		padding: @padding-normal;
+		@media (min-width: @breakpoint-desktop) {
 			padding: @padding-small @padding-normal;
 		}
 		&,
